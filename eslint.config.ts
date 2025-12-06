@@ -21,5 +21,17 @@ export default defineConfig([
   prettierPlugin,
   sonarjs.configs.recommended,
   unicorn.configs.recommended,
-  tseslint.configs.recommended
+  tseslint.configs.recommended,
+  {
+    rules: {
+      'unicorn/prevent-abbreviations': [
+        'error',
+        {
+          allowList: {
+            env: true
+          }
+        }
+      ]
+    }
+  }
 ]);
