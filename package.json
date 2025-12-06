@@ -1,0 +1,52 @@
+{
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Doinel Atanasiu",
+    "email": "doinel+github@atanasiu.me",
+    "url": "https://links.atanasiu.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doinel1a/vanilla-node-ts"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
+  "packageManager": "pnpm@11.5.0",
+  "scripts": {
+    "prepare": "husky",
+    "dev": "tsx src/env.ts && tsx watch src/index.ts",
+    "build": "tsup",
+    "start": "tsx src/env.ts && node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write **/**/*.{js,mjs,cjs,ts,mts,cts} --cache"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "0.13.11",
+    "dotenv": "17.4.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "21.0.2",
+    "@commitlint/config-conventional": "21.0.2",
+    "@ianvs/prettier-plugin-sort-imports": "4.7.1",
+    "@types/node": "25.9.2",
+    "eslint": "10.4.1",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.6",
+    "eslint-plugin-sonarjs": "4.0.3",
+    "eslint-plugin-unicorn": "65.0.1",
+    "husky": "9.1.7",
+    "lint-staged": "17.0.7",
+    "prettier": "3.8.3",
+    "tsup": "8.5.1",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.61.0"
+  }
+}
