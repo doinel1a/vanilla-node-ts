@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/doinel1a/node-ts-base"
+    "url": "https://github.com/doinel1a/vanilla-node-ts"
   },
   "scripts": {
     "prepare": "husky",
