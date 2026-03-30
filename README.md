@@ -1,1 +1,1 @@
-# node-ts-base
+# vanilla-node-ts
